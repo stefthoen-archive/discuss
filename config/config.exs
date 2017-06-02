@@ -12,7 +12,7 @@ config :discuss,
 # Configures the endpoint
 config :discuss, Discuss.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "XLBUMmKoUhP/b3LiBzwAV6+EI9QNFxsmpk8TOcroJD3YCHshjjBJsM6BvoJxxkdx",
+  secret_key_base: "",
   render_errors: [view: Discuss.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Discuss.PubSub,
            adapter: Phoenix.PubSub.PG2]
@@ -32,5 +32,5 @@ config :ueberauth, Ueberauth,
   ]
 
 config :ueberauth, Ueberauth.Strategy.Github.OAuth,
-  client_id: "c17e8e054cff7311132c",
-  client_secret: "84bc5745843c1e1319ac23899e894fd64924e235"
+  client_id: "",
+  client_secret: ""
